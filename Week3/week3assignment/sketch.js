@@ -45,7 +45,7 @@ rect(210, 140, 80, 300);
     
     //eye1
    
-    mapX = map(mouseX, 0, width, -9, 0);
+    mapX = map(mouseX, 0, width, -10, 0);
  //ellipse(random(width), random(height), 50, 50);
     fill(255)
     ellipse(eye1X,eye1Y,40,40);
@@ -75,8 +75,7 @@ rect(210, 140, 80, 300);
     
 
      noStroke();
-    
-   
+    //mouse cursor
     ellipse(mouseX, mouseY,10,10)
     
     //mustache
@@ -84,7 +83,7 @@ rect(210, 140, 80, 300);
     arc(eye1X + 15, eye1Y + 45 ,30, 20, PI, PI+PI)
     arc(eye1X + eye2offset -15, eye1Y + 45 ,30, 20, PI, PI+PI)
     
-    
+    //flashing bow tie
      randNum = random(255); //0-255
    fill(randNum,0,0);
        triangle(200, 170, 250, 200, 200, 220);
