@@ -17,7 +17,7 @@ function draw() {
 
     //    if(counter < width){counter = counter + 1}
 
-    if (counter < 0) { //limit one
+    if (counter <= 0) { //limit one
         ballDir = true;
         console.log("left hit" + counter)
     }
