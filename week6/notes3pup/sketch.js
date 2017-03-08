@@ -19,6 +19,7 @@ function draw() {
 
    quad(centerX - 100, 400, centerX + 100, 400, centerX + 40, 230, centerX - 40, 230);
     
+    //ears
     fill("gray");
     ellipse(centerX - 60,centerY - 60,50,50);
      ellipse(centerX + 60,centerY  - 60,50,50);
@@ -34,12 +35,7 @@ function draw() {
     fill("yellow")
     rect(centerX-30, centerY + 90, 25, 90,0);
      rect(centerX + 30, centerY + 90, 25, 90, 0);
-    
-    
-   
-   
-    
-  
+
   //face
   fill("gray") 
  ellipse(centerX, centerY, 150, 150);
