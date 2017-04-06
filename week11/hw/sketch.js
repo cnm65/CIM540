@@ -13,7 +13,7 @@ function setup() {
 
     interfaceItems.push(new interface(50, 300, 100, "start"));
     interfaceItems.push(new interface(150, 300, 100, "stop"));
-    interfaceItems.push(new interface(250, 300, 100, "restart"));
+    interfaceItems.push(new interface(250, 300, 100, "reset"));
 
     bubble1 = new bubble(random(width), random(height), 100);
 
@@ -43,9 +43,11 @@ function draw() {
         bubble1.move();
     } else if (currentType == "stop") {
 
-    } else if (currentType == "restart") { this.move1();
+    } else if (currentType == "reset") { bubble1.move1();
     }
- bubble1.display();
+
+    
+    bubble1.display();
     bubble1.checkWidth();
     }
     
@@ -68,7 +70,7 @@ function interface(tempX, tempY, tempBoxSize, tempType) {
             fill(0, 255, 0, setFill);
         } else if (this.type == "stop") {
             fill(255, 0, 0, setFill);
-        } else if (this.type == "restart") {
+        } else if (this.type == "reset") {
             fill(0, 0, 255, setFill);
         }
 
@@ -102,12 +104,12 @@ function bubble(tempX, tempY, tempDiameter) {
     this.move = function () {
        this.x++; 
     }
-    
-   this.move1 = function () {
-       this.x = 1; 
+    this.move1 = function(){
+        this.x = 1; 
     }
+
    
-//   if (currentType == "restart") {
+//   if (currentType == "reset") {
 //        
 //    this.move1 = true; }
 
