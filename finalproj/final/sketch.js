@@ -120,7 +120,7 @@ function draw() {
      image(spotlight, 700, 220, 150, 340);
     
     
-    image(drum, 100, 270, 80, 120);
+    image(drum, 100, 290, 130, 130);
     image(bass, 200, 270, 80, 120);
     image(soprano, 300,270, 80, 120);
     image(alto, 400, 270, 80, 120);
